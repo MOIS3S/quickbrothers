@@ -24,8 +24,9 @@ SECRET_KEY = '24*9sqc046y7o9+^e^&ki&=v_pvxwryhmz!b^mn2ldr-b5#qwx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -117,9 +118,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
+
+# STATIC_ROOT = 'staticfiles'
 
 STATICFILES_DIRS = (
-    os.path.join('static'),
+    os.path.join('staticfiles'),
     '/home/benaya/proyectos/QuickBrothers/quickbrothers/',
 )

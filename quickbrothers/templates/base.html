@@ -1,4 +1,5 @@
-<!--{% load static %}-->
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,186 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <title></title>
-        <!--PARA DESARROLLO-->
-        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../static/css/style.css">
+        {% block title %}<title>Home</title>{% endblock %}
+
     </head>
     <body>
-        <div class="container-fluid">
-        <header id="header">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Quick Brothers</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+      {% block content %}
 
-              <div class="collapse navbar-collapse mr" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            <h1 id="titulo-principal">Specialtist in Wall <br> Protection Installation</h1>
-            <h2 id="sub-titulo">Small details make the diference...</h2>
-        </header>
-        <section>
-            <article>
-                <div class="container">
-                    <div class="row">
-                        <div class="col align-self-center">
-                            <h1 class="display-3 text-center">Services</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 bor">
-                            <div class="container-img-services">
-                                <img src="../static/IMG-0036.jpg" alt="..." class="img-fluid">
-                            </div>
-                            <h4 class="titulo-img-services">Wall Protection Covering+Panels</h4>
-                            <p class="parrafo-img-services">Installation of covers and panels for Wall protection:
-                              <li>High Impact Wall Covering</li>
-                              <li>Design Wall Covering</li>
-                              <li>Stainless Steel Wall Covering</li>
-                              <li>Walls Panels</li>
-                          </p>
-                        </div>
-                        <div class="col-md-4 bor">
-                            <div class="container-img-services">
-                                <img src="../static/IMG-0038.jpg" alt="..." class="img-fluid">
-                            </div>
-                            <h4 class="titulo-img-services">Wall Protection Crash rail and Handrail.</h4>
-                            <p class="parrafo-img-services">Crash Rail:  Protect your walls with the installation of Crash Rails in different materials such as wood, metal and rubber.<br>
-Handrails: Can aid in any facility´s desire to ease movement while maintaining a cohesive design. Available in wood, metal and rubber.
-</p>
-                        </div>
-                        <div class="col-md-4 bor">
-                            <div class="container-img-services">
-                                <img src="../static/IMG-0039.jpg" alt="..." class="img-fluid">
-                            </div>
-                            <h4 class="titulo-img-services">Wall protection Corner Guards and Frames Door.</h4>
-                            <p class="parrafo-img-services">Corner Guards: Covers all angles of interior walls, are available in designs and material options such as wood, metal, polycarbonate and rubber.<br>
-Frames Door:  the door protection to reduce damage and maintenance costs. We offer kick/push plates, full door cladding, door edge protectors, door knob protector, latch protectors, and door frame protection.
-</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 altura">
-                            <h1 class="display-4 title-about">About</h1>
-                            <p class="paragraph-about">
-                              We are a service company that is dedicated to thel installation of wall protectors; Our priority is to meet
-                              all the demands of our customers and we believe that the small details make the difference for the successful result.<br>
-                              <strong>Our Mission</strong><br>
-                              Our Mission is to give an excellent service to our clients, satisfying their demands, and exceeding their expectations in the project. For us, there is no such large or small work, all projects deserve dedication and responsibility.<br>
-                              <strong>Our Vision</strong><br>
-                              Our Vision is to be the number “One” company in installation of wall protectors in the state of Florida, giving solutions and advances in the installation issue.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="../static/fondo.png" alt="..." class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="container-fluid altura-data ">
-                    <div class="row justify-content-center align-items-center delete-margin">
-                        <div class="col-md-2">
-                            <div class="display-4 text-center">2017</div>
-                            <p class="text-center">Año de Establecimiento</p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="display-4 text-center">2017</div>
-                            <p class="text-center">Proyectos Completados</p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="display-4 text-center">2017</div>
-                            <p class="text-center">Constructores Contratados</p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="display-4 text-center">2017</div>
-                            <p class="text-center">Premios Obtenidos</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="container">
-                    <div class="display-4 text-center title-projects">projects</div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-5">
-                            <!--<div class="sobre-fondo"></div>-->
-                            <img src="../static/fondo_header.jpg" alt="..." class="img-fluid img-projects sobre-fondo">
-                        </div>
-                        <div class="col-md-5">
-                            <img src="../static/fondo_header.jpg" alt="..." class="img-fluid img-projects">
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-5">
-                            <img src="../static/fondo_header.jpg" alt="..." class="img-fluid img-projects">
-                        </div>
-                        <div class="col-md-5">
-                            <img src="../static/fondo_header.jpg" alt="..." class="img-fluid img-projects">
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-              <div class="container">
-                <div class="display-4 text-center title-projects">Client</div>
-              </div>
-            </article>
-            <article class="altura-contact">
-              <div class="container">
-                <div class="display-4 text-center title-projects">Contact</div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <h2 class="title-contact">Preguntas</h2>
-                    <p class="p-contact">Para todo tipo de preguntas, comentarios e inquietudes; por favor llámanos: +1954-6002542 o completa el formulario a continuación</p>
-                    <form>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputText" placeholder="Nombre">
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <textarea name="mensaje" class="form-control" id="exampleInputMensaje" placeholder="Mensaje"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                  </div>
-                  <div class="col-md-6">
-                    <h2 class="title-contact">Oficina Principal</h2>
-                    <p class="p-contact">3716 Coral springs Dr, Coral springs, Florida 33065</p>
-                    <h2 class="title-contact">Recibe un presupuesto:</h2>
-                    <p>+19549391436 <br> +1786-6144765</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-        </section>
-        </div>
-
+      {% endblock %}
         <script src="{% static '/js/jquery-3.2.1.slim.min.js'%}"></script>
         <script src="{% static 'bootstrap/js/popper.min.js'%}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -194,5 +22,26 @@ Frames Door:  the door protection to reduce damage and maintenance costs. We off
         <script src="../static/js/jquery-3.2.1.slim.min.js"></script>
         <script src="../static/bootstrap/js/popper.min.js"></script>
         <script src="../static/bootstrap/js/bootstrap.min.js"></script>-->
+        <script>
+        $(document).ready(function() {
+            $('#services').click(function(){
+                $('html, body').scrollTop($('#services-top').position().top-100);
+                return false;
+            });
+            $('#about').click(function(){
+                $('html, body').scrollTop($('#about-top').position().top-100);
+                return false;
+            });
+            $('#projects').click(function(){
+                $('html, body').scrollTop($('#projects-top').position().top-100);
+                return false;
+            });
+            $('#contact').click(function(){
+                $('html, body').scrollTop($('#contact-top').position().top-100);
+                return false;
+            });
+
+        });
+        </script>
     </body>
 </html>
