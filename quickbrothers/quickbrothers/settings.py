@@ -124,5 +124,13 @@ STATIC_URL = '/staticfiles/'
 
 STATICFILES_DIRS = (
     os.path.join('staticfiles'),
-    '/home/benaya/proyectos/QuickBrothers/quickbrothers/',
+    #'/home/benaya/proyectos/QuickBrothers/quickbrothers/',
 )
+
+# Configuracion De Correo
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'quickbrothers1@gmail.com'
+EMAIL_HOST_PASSWORD = '*********'
+EMAIL_USE_TLS = True

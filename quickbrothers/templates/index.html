@@ -34,7 +34,7 @@
         </div>
       </nav>
       <h1 id="titulo-principal">Specialist in <br> Wall Protection <br> Installation</h1>
-      <h2 id="sub-titulo">Small details make the diference...</h2>
+      <!--<h2 id="sub-titulo">Small details make the diference...</h2>-->
   </header>
   <section>
       <article>
@@ -71,7 +71,7 @@
                           <img src="{% static 'IMG-0039.jpg' %}" alt="..." class="img-fluid">
                           <h4 class="titulo-img-services">Wall protection Corner Guards and Frames Door.</h4>
                           <p class="parrafo-img-services"><span id="vineta" >Corner Guards: </span> Covers all angles of interior walls, are available in designs and material options such as wood, metal, polycarbonate and rubber.<br>
-      Frames Door:  the door protection to reduce damage and maintenance costs. We offer kick/push plates, full door cladding, door edge protectors, door knob protector, latch protectors, and door frame protection.
+      <span id="vineta" >Frames Door: </span>the door protection to reduce damage and maintenance costs. We offer kick/push plates, full door cladding, door edge protectors, door knob protector, latch protectors, and door frame protection.
       </p>
                       </div>
                   </div>
@@ -84,7 +84,7 @@
                   <div class="col-md-6 col-sm-12">
                       <h1 class="display-4 title-about">About</h1>
                       <p class="paragraph-about">
-                        We are a service company that is dedicated to thel installation of wall protectors; Our priority is to meet
+                        We are a service company that is dedicated to the installation of wall protectors; Our priority is to meet
                         all the demands of our customers and we believe that the small details make the difference for the successful result.<br>
                         <strong>Our Mission</strong><br>
                         Our Mission is to give an excellent service to our clients, satisfying their demands, and exceeding their expectations in the project. For us, there is no such large or small work, all projects deserve dedication and responsibility.<br>
@@ -98,28 +98,7 @@
               </div>
           </div>
       </article>
-      <!--<article>
-          <div class="container-fluid altura-data ">
-              <div class="row justify-content-center align-items-center delete-margin">
-                  <div class="col-md-2">
-                      <div class="display-4 text-center">2017</div>
-                      <p class="text-center">Año de Establecimiento</p>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="display-4 text-center">2017</div>
-                      <p class="text-center">Proyectos Completados</p>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="display-4 text-center">2017</div>
-                      <p class="text-center">Constructores Contratados</p>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="display-4 text-center">2017</div>
-                      <p class="text-center">Premios Obtenidos</p>
-                  </div>
-              </div>
-          </div>
-      </article>-->
+      <div class="clearfix"></div>
       <article>
           <div class="container" id="projects-top">
               <div id="titulo-services" class="display-4 text-center title-projects">projects</div>
@@ -153,7 +132,7 @@
                   <div class="col-md-6">
                     <div class="sobre-fondo">
                       <a href="{% url 'leon-medical-center' %}">
-                        <img src="{% static 'img/leon-medical/img-1.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                        <img src="{% static 'img/leon-medical/img-4.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                         <span id="img-link">Leon Medical Center</span>
                       </a>
                     </div>
@@ -171,7 +150,7 @@
                   <div class="col-md-6">
                     <div class="sobre-fondo">
                       <a href="{% url 'telemundo'%}">
-                        <img src="{% static 'img/telemundo/img-1.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                        <img src="{% static 'img/telemundo/img-10.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                         <span id="img-link">NBC-Telemundo</span>
                       </a>
                     </div>
@@ -187,16 +166,17 @@
               <h2 class="title-contact">Any Questions ?</h2>
               <p class="p-contact">Please contact us with any questions,
                  concerns or feedback you may have. We are here to serve you.<br>
-                 By phone: 954-939- 1437 <br> By Email: wallprotection@quickbrothersinc.net <br> Or complete the form below:</p>
-              <form>
+                 <strong>By phone:</strong> +1954-9391437 <br> <strong>By Email:</strong> wallprotection@quickbrothersinc.net <br> Or complete the form below:</p>
+              <form action="." method="post">
+                 {% csrf_token %}
                 <div class="form-group">
-                  <input type="text" class="form-control" id="exampleInputText" placeholder="Name">
+                  <input name="name" type="text" class="form-control" id="exampleInputText" placeholder="Name">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <textarea name="mensaje" class="form-control" id="exampleInputMensaje" placeholder="message"></textarea>
+                  <textarea name="message" class="form-control" id="exampleInputMensaje" placeholder="menssage"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
               </form>
@@ -205,7 +185,7 @@
               <h2 class="title-contact">Company Address</h2>
               <p class="p-contact">3716 Coral springs Dr, Coral springs, Florida 33065</p>
               <h2 class="title-contact">Request a Quote:</h2>
-              <p>+19549391436 <br> +1786-6144765</p>
+              <p>+1954-9391437 <br> +1786-6144765</p>
             </div>
           </div>
         </div>
