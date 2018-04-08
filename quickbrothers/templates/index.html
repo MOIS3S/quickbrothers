@@ -1,6 +1,38 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117100259-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-117100259-1');
+    </script>
+    {% block title %}<title>Home</title>{% endblock %}
+    <style>
+      body{
+          font-family: 'Raleway', 'Arial';
+          color: black;
+          height: 100%;
+        }
+      .container-fluid{
+            padding-left: 0;
+            padding-right: 0;
+        }
+      li{
+          color: black;
+        }
+    </style>
+    {% endblock %}
+</head>
 {% block content %}
   <div class="container-fluid">
   <header id="header">
@@ -47,7 +79,7 @@
               <div class="row">
                   <div class="col-md-4 bor">
                       <div class="container-img-services">
-                          <img src="{% static 'IMG-0036.jpg' %}" alt="..." class="img-fluid">
+                          <img src="{% static 'img/index/IMG-0036-min.jpg' %}" alt="..." class="img-fluid">
                           <h4 class="titulo-img-services">Wall Protection Covering+Panels</h4>
                           <p class="parrafo-img-services">Installation of covers and panels for Wall protection:</p>
                             <ul>
@@ -60,7 +92,7 @@
                   </div>
                   <div class="col-md-4 bor">
                       <div class="container-img-services">
-                          <img src="{% static 'IMG-0038.jpg' %}" alt="..." class="img-fluid">
+                          <img src="{% static 'img/index/IMG-0038-min.jpg' %}" alt="..." class="img-fluid">
                           <h4 class="titulo-img-services">Wall Protection Crash rail and Handrail.</h4>
                           <p class="parrafo-img-services"><span id="vineta" >Crash Rail: </span>Protect your walls with the installation of Crash Rails in different materials such as wood, metal and rubber.<br><p/>
                           <p class="parrafo-img-services"><span id="vineta" >Handrails: </span>Can aid in any facility´s desire to ease movement while maintaining a cohesive design. Available in wood, metal and rubber.</p>
@@ -68,7 +100,7 @@
                   </div>
                   <div class="col-md-4 bor">
                       <div class="container-img-services">
-                          <img src="{% static 'IMG-0039.jpg' %}" alt="..." class="img-fluid">
+                          <img src="{% static 'img/index/IMG-0039-min.jpg' %}" alt="..." class="img-fluid">
                           <h4 class="titulo-img-services">Wall protection Corner Guards and Frames Door.</h4>
                           <p class="parrafo-img-services"><span id="vineta" >Corner Guards: </span> Covers all angles of interior walls, are available in designs and material options such as wood, metal, polycarbonate and rubber.<br>
       <span id="vineta" >Frames Door: </span>the door protection to reduce damage and maintenance costs. We offer kick/push plates, full door cladding, door edge protectors, door knob protector, latch protectors, and door frame protection.
@@ -93,7 +125,7 @@
                       </p>
                   </div>
                   <div class="col-md-6 col-sm-12" style="background-color: white; padding: 0px;">
-                      <img src="{% static '/img/about/img-1.jpg' %}" alt="..." class="img-fluid img-about">
+                      <img src="{% static '/img/about/img-1-min.jpg' %}" alt="..." class="img-fluid img-about">
                   </div>
               </div>
           </div>
@@ -106,7 +138,7 @@
                   <div class="col-md-6">
                       <div class="sobre-fondo">
                         <a href="{% url 'aventura-hospital' %}">
-                          <img src="{% static 'img/aventura/img-1.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                          <img src="{% static 'img/aventura/img-1-min.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                           <span id="img-link">Aventura Hospital</span>
                         </a>
                       </div>
@@ -114,7 +146,7 @@
                   <div class="col-md-6">
                     <div class="sobre-fondo">
                       <a href="{% url 'memorial-hospital' %}">
-                        <img src="{% static 'img/memorial-hospital/img-1.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                        <img src="{% static 'img/memorial-hospital/img-1-min.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                         <span id="img-link">Memorial Hospital</span>
                       </a>
                     </div>
@@ -124,7 +156,7 @@
                   <div class="col-md-6">
                     <div class="sobre-fondo">
                       <a href="{% url 'general-palmetto-hospital'%}">
-                        <img src="{% static 'img/palmetto/img-1.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                        <img src="{% static 'img/palmetto/img-1-min.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                         <span id="img-link">General Palmetto Hospital</span>
                       </a>
                     </div>
@@ -132,7 +164,7 @@
                   <div class="col-md-6">
                     <div class="sobre-fondo">
                       <a href="{% url 'leon-medical-center' %}">
-                        <img src="{% static 'img/leon-medical/img-4.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                        <img src="{% static 'img/leon-medical/img-4-min.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                         <span id="img-link">Leon Medical Center</span>
                       </a>
                     </div>
@@ -142,7 +174,7 @@
                   <div class="col-md-6">
                     <div class="sobre-fondo">
                       <a href="{% url 'jfk-hospital' %}">
-                        <img src="{% static 'img/jfk-hospital/img-1.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                        <img src="{% static 'img/jfk-hospital/img-1-min.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                         <span id="img-link">JFK Hospital</span>
                       </a>
                     </div>
@@ -150,7 +182,7 @@
                   <div class="col-md-6">
                     <div class="sobre-fondo">
                       <a href="{% url 'telemundo'%}">
-                        <img src="{% static 'img/telemundo/img-10.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                        <img src="{% static 'img/telemundo/img-10-min.jpg' %}" alt="..." class="img-fluid img-projects sobre-fondo">
                         <span id="img-link">NBC-Telemundo</span>
                       </a>
                     </div>

@@ -3,41 +3,62 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% block head %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         {% block title %}<title>Home</title>{% endblock %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117100259-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'UA-117100259-1');
+        </script>
+        {% endblock %}
     </head>
     <body>
       {% block content %}
 
       {% endblock %}
-        <script src="{% static '/js/jquery-3.2.1.slim.min.js'%}"></script>
-        <script src="{% static 'bootstrap/js/popper.min.js'%}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
-        <!--Para desarrollo
-        <script src="../static/js/jquery-3.2.1.slim.min.js"></script>
-        <script src="../static/bootstrap/js/popper.min.js"></script>
-        <script src="../static/bootstrap/js/bootstrap.min.js"></script>-->
+        <script src="{% static '/js/jquery-3.3.1.min.js'%}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js'%}" async></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" async></script>-->
         <script>
         $(document).ready(function() {
+            var div = $('html,body');
             $('#services').click(function(){
-                $('html, body').scrollTop($('#services-top').position().top-100);
+                var px = $('#services-top').position().top-100;
+                div.animate({
+                  scrollTop: px
+                }, "500");
                 return false;
             });
+
             $('#about').click(function(){
-                $('html, body').scrollTop($('#about-top').position().top-100);
+                var px = $('#about-top').position().top-100;
+                div.animate({
+                  scrollTop: px
+                }, "500");
                 return false;
             });
+
             $('#projects').click(function(){
-                $('html, body').scrollTop($('#projects-top').position().top-100);
+                var px = $('#projects-top').position().top-100;
+                div.animate({
+                  scrollTop: px
+                }, "500");
                 return false;
             });
             $('#contact').click(function(){
-                $('html, body').scrollTop($('#contact-top').position().top-100);
+                var px = $('#contact-top').position().top-100;
+                div.animate({
+                  scrollTop: px
+                }, "500");
                 return false;
             });
 
