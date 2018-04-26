@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117100259-1"></script>
@@ -36,7 +37,7 @@
 {% block content %}
   <div class="container-fluid">
   <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#">
           <div class="logo"></div>
           <div class="logo-titulo">Quick Brothers <br> <span id="inc-estilo">Incorporation</span> </div>
@@ -47,7 +48,7 @@
 
         <div class="collapse navbar-collapse mr" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -138,7 +139,7 @@
                   <div class="col-md-6">
                       <div class="sobre-fondo">
                         <a href="{% url 'aventura-hospital' %}">
-                          <img src="{% static 'img/aventura/img-1-min.JPG' %}" alt="..." class="img-fluid img-projects sobre-fondo">
+                          <img src="{% static 'img/aventura/img-1-min.JPG' %}" alt="..." class="img-fluid img-projects">
                           <span id="img-link">Aventura Hospital</span>
                         </a>
                       </div>

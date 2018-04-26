@@ -62,6 +62,25 @@
                 return false;
             });
 
+            $(window).scroll(function(){
+                var currentTop = $(window).scrollTop();
+                if(currentTop > 10) {
+                  $('#nav').css({"background-color": "white"});
+                  /*ANIMATIONS*/
+                  $('#nav').css({"transition": "background-color 0.8s"});
+
+                  //$('#navbarSupportedContent').css({"transition": "background-color 0.8s"});
+                  if($(window)[0].innerWidth <= 990) {
+                      console.log($(window)[0].innerWidth)
+                      $('#navbarSupportedContent').css({"background-color": "white"});
+                      $('#navbarSupportedContent').css({"transition": "background-color 0.8s"});
+                  }
+                }else{
+                  $('#nav').css({"background-color": "transparent"});
+                  $('.navbar-brand').css({"background-color": "transparent"});
+                  $('#navbarSupportedContent').css({"background-color": "transparent"});
+                }
+            });
         });
         </script>
     </body>
