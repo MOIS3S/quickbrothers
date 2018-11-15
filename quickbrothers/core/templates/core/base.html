@@ -1,0 +1,902 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom fonts for this theme -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="{% static 'core/vendor/font-awesome/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/vendor/owl-carousel/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/vendor/owl-carousel/owl.theme.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/vendor/owl-carousel/owl.transitions.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/vendor/animate.css/animate.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/device-mockups/device-mockups.min.css' %}" rel="stylesheet" type="text/css">
+
+
+    <!-- Custom styles for this theme -->
+    <!-- Uncomment the color scheme you want to use! Red is chosen by default! -->
+    <link href="{% static 'core/css/vitality-yellow.css' %}" rel="stylesheet" type="text/css">
+    <!-- <link href="css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-green.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-turquoise.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
+
+  </head>
+
+  <body id="page-top">
+    
+    {% block header %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <!--<img class="img-fluid" src="{% static 'core/img/agency/logo-white.AI.svg' %}" alt="">-->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+          Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endblock %}
+
+    {% block content %}
+    <!-- Masthead -->
+    <header class="masthead" style="background-image: url(' {% static 'core/img/agency/backgrounds/bg-header.jpg' %} ')">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto text-center text-white">
+            <img class="masthead-img img-fluid mb-3" src="{% static 'core/img/agency/SVGlogo-big.svg' %}" alt="">
+            <div class="masthead-title">Quickbrothers</div>
+            <hr class="colored">
+            <div class="masthead-subtitle">Specialist in wall protection installation</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a class="btn js-scroll-trigger" href="#about">
+          <i class="fa fa-angle-down fa-fw"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="page-section" id="about">
+      <div class="container-fluid">
+        <div class="wow fadeIn text-center">
+          <h1>About us</h1>
+          <!--<p class="mb-0">Vitality is the perfect theme for a freelance professional or an agency.</p>-->
+        </div>
+        <hr class="colored">
+        <div class="row text-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
+              <i class="fas fa-user-tie fa-4x"></i>
+              <h3>The Company</h3>
+              <p class="mb-0">We are a service company that is dedicated to the installation of wall protectors; Our priority is to meet all the demands of our customers and we believe that the small details make the difference for the successful result.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
+              <i class="fas fa-pencil-ruler fa-4x"></i>
+              <h3>Our Mission</h3>
+              <p class="mb-0">Our Mission is to give an excellent service to our clients, satisfying their demands, and exceeding their expectations in the project. For us, there is no such large or small work, all projects deserve dedication and responsibility.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
+              <i class="fa fa-rocket fa-4x"></i>
+              <h3>Our Vision</h3>
+              <p class="mb-0">Our Vision is to be the number “One” company in installation of wall protectors in the state of Florida, giving solutions and advances in the installation issue. </p>
+            </div>
+          </div>
+          <!--<div class="col-lg-3 col-md-6">
+            <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
+              <i class="fa fa-heart fa-4x"></i>
+              <h3>Built with Love</h3>
+              <p class="mb-0">All themes by Start Bootstrap are crafted with care. Thank you for choosing Vitality and being a customer!</p>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action" style="background-image: url(' {% static 'core/img/agency/backgrounds/bg-quote.jpg' %} ');">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <span class="quote">Small 
+              <span class="text-primary">details</span>
+              make the
+              <span class="text-primary">diference...</span>
+            <hr class="colored">
+            <a class="btn btn-primary js-scroll-trigger" href="#services">How We Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="page-section services" id="services">
+      <div class="container">
+        <div class="text-center wow fadeIn">
+          <h2>Services</h2>
+          <hr class="colored">
+          <!--<p class="mb-0">Here is an overview of how we approach each new project.</p>-->
+        </div>
+        <div class="row mt-4">
+
+          <!-- Service Item 1 -->
+          <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
+            <div class="media">
+              <!--<div class="pull-left">
+                <i class="fa fa-clipboard rounded-circle"></i>
+              </div>-->
+              <div class="media-body">
+                <h3 class="media-heading">Wall Protection Covering+Panels</h3>
+                <ul>
+                  <li>High Impact Wall Covering</li>
+                  <li>Design Wall Covering</li>
+                  <li>Stainless Steel Wall Covering</li>
+                  <li>Walls Panels</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Item 2 -->
+          <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
+            <div class="media">
+              <!--<div class="pull-left">
+                <i class="fa fa-pencil rounded-circle"></i>
+              </div>-->
+              <div class="media-body">
+                <h3 class="media-heading">Wall Protection Crash rail and Handrail.</h3>
+                <ul>
+                  <li><span style="font-weight:400;">Crash Rail: </span>protect your walls with the installation of Crash Rails in different materials such as wood, metal and rubber.</li>
+                  <li><span style="font-weight:400;">Handrails:  </span>can aid in any facility´s desire to ease movement while maintaining a cohesive design. Available in wood, metal and rubber.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Item 3 -->
+          <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
+            <div class="media">
+              <!--<div class="pull-left">
+                <i class="fa fa-rocket rounded-circle"></i>
+              </div>-->
+              <div class="media-body">
+                <h3 class="media-heading">Wall protection Corner Guards and Frames Door.</h3>
+                <ul>
+                  <li><span style="font-weight:400;">Corner Guards: </span>covers all angles of interior walls, are available in designs and material options such as wood, metal, polycarbonate and rubber.</li>
+                  <li><span style="font-weight:400;">Frames Door:  </span>the door protection to reduce damage and maintenance costs. We offer kick/push plates, full door cladding, door edge protectors, door knob protector, latch protectors, and door frame protection. </li>                   
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Carousel Heading -->
+    <section class="page-section bg-light" id="work">
+      <div class="container text-center wow fadeIn">
+        <h2>Our Work</h2>
+        <hr class="colored">
+        <p>Here are some examples of our work.</p>
+      </div>
+    </section>
+
+
+{% block portfolio %}
+    <!-- Portfolio Carousel -->
+    <div class="portfolio-carousel wow fadeIn owl-carousel owl-theme">
+
+      <!-- Portfolio Carousel Item 1 -->
+      <div class="item" style="background-image: url({% static 'core/img/agency/portfolio/carousel/bg-1.jpg' %})">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-md-7 my-auto d-none d-sm-block">
+              <div class="device-container">
+                <div class="device-mockup macbook portrait black">
+                  <div class="device">
+                    <div class="screen">
+                      <img class="img-fluid" src="{% static 'core/img/agency/portfolio/carousel/screen-1a.jpg' %}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 my-auto">
+              <div class="project-details">
+                <span class="project-name">Project Name</span>
+                <span class="project-description">Branding, Website Design</span>
+                <hr class="colored">
+                <a href="#portfolioModal1" data-toggle="modal" class="btn btn-primary">View Details
+                  <i class="fa fa-long-arrow-right fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Carousel Item 2 -->
+      <div class="item" style="background-image: url( {% static 'core/img/agency/portfolio/carousel/bg-2.jpg' %} )">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-md-7 my-auto d-none d-sm-block">
+              <div class="device-container">
+                <div class="device-mockup macbook portrait black">
+                  <div class="device">
+                    <div class="screen">
+                      <img class="img-fluid" src="{% static 'core/img/agency/portfolio/carousel/screen-2a.jpg' %}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 my-auto">
+              <div class="project-details">
+                <span class="project-name">Project Name</span>
+                <span class="project-description">Branding, Website Design</span>
+                <hr class="colored">
+                <a href="#portfolioModal2" data-toggle="modal" class="btn btn-primary">View Details
+                  <i class="fa fa-long-arrow-right fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Carousel Item 3 -->
+      <div class="item" style="background-image: url(' {% static 'core/img/agency/portfolio/carousel/bg-3.jpg' %} ')">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-md-7 my-auto d-none d-sm-block">
+              <div class="device-container">
+                <div class="device-mockup macbook portrait black">
+                  <div class="device">
+                    <div class="screen">
+                      <img class="img-fluid" src="{% static 'core/img/agency/portfolio/carousel/screen-3a.jpg' %}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 my-auto">
+              <div class="project-details">
+                <span class="project-name">Project Name</span>
+                <span class="project-description">Branding, Website Design</span>
+                <hr class="colored">
+                <a href="#portfolioModal3" data-toggle="modal" class="btn btn-primary">View Details
+                  <i class="fa fa-long-arrow-right fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Carousel Item 4 -->
+      <div class="item" style="background-image: url(' {% static 'core/img/agency/portfolio/carousel/bg-4.jpg' %} ')">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-md-7 my-auto d-none d-sm-block">
+              <div class="device-container">
+                <div class="device-mockup macbook portrait black">
+                  <div class="device">
+                    <div class="screen">
+                      <img class="img-fluid" src="{% static 'core/img/agency/portfolio/carousel/screen-4.jpg' %}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 my-auto">
+              <div class="project-details">
+                <span class="project-name">Project Name</span>
+                <span class="project-description">Branding, Website Design</span>
+                <hr class="colored">
+                <a href="#portfolioModal4" data-toggle="modal" class="btn btn-primary">View Details
+                  <i class="fa fa-long-arrow-right fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+{% endblock %}
+
+{% block grid %}
+    <!-- Portfolio Grid Section -->
+    <section class="page-section">
+      <div class="container text-center wow fadeIn">
+        <h2>Portfolio</h2>
+        <hr class="colored">
+        <p>Here are some other projects that we've worked on.</p>
+        <div class="controls mt-3">
+          <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter="all">All</button>
+          <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter=".identity">Identity</button>
+          <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter=".graphic">Graphic</button>
+          <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter=".web">Web</button>
+        </div>
+        <div class="portfolio-grid clearfix" id="portfolioList">
+
+          <!-- Grid Item 1 -->
+          <div class="mix identity" href="{% static 'core/img/agency/portfolio/grid/grid-1.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-1.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Brand Identity</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 2 -->
+          <div class="mix web" href="{% static 'core/img/agency/portfolio/grid/grid-2.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-2.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Web Development</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 3 -->
+          <div class="mix web" href="{% static 'core/img/agency/portfolio/grid/grid-3.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-3.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Web Development</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 4 -->
+          <div class="mix identity" href="{% static 'core/img/agency/portfolio/grid/grid-4.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-4.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Brand Identity</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 5 -->
+          <div class="mix web" href="{% static 'core/img/agency/portfolio/grid/grid-5.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-5.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Web Development</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 6 -->
+          <div class="mix graphic" href="{% static 'core/img/agency/portfolio/grid/grid-6.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-6.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Graphic Design</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 7 -->
+          <div class="mix graphic" href="{% static 'core/img/agency/portfolio/grid/grid-7.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-7.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Graphic Design</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 8 -->
+          <div class="mix web" href="{% static 'core/img/agency/portfolio/grid/grid-8.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-8.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Web Development</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Item 9 -->
+          <div class="mix identity" href="{% static 'core/img/agency/portfolio/grid/grid-9.jpg' %}" title="Client Name">
+            <div class="portfolio-wrapper">
+              <img src="{% static 'core/img/agency/portfolio/grid/grid-9.jpg' %}" alt="">
+              <div class="caption">
+                <div class="caption-text">
+                  <a class="text-title">Client Name</a>
+                  <span class="text-category">Brand Identity</span>
+                </div>
+                <div class="caption-bg"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+{% endblock %}
+
+{% block contact %}
+    <!-- Contact Section -->
+    <section class="page-section" id="contact">
+      <div class="container wow fadeIn">
+        <div class="text-center">
+          <h2>Contact Us</h2>
+          <hr class="colored">
+          <p>Please contact us with any questions, concerns or feedback you may have. We are here to serve you.</p>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-8 mx-auto">
+            <form name="sentMessage" id="contactForm" novalidate method="POST">
+              {% csrf_token %}
+              <div class="row control-group">
+                <div class="form-group col-12 floating-label-form-group controls">
+                  <label>Name</label>
+                  <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-12 floating-label-form-group controls">
+                  <label>Email Address</label>
+                  <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-12 floating-label-form-group controls">
+                  <label>Phone Number</label>
+                  <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-12 floating-label-form-group controls">
+                  <label>Message</label>
+                  <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="row">
+                <div class="form-group col-12">
+                  <button type="submit" class="btn btn-secondary">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <!-- Footer -->
+    <footer class="footer" style="background-image: url(' {% static 'core/img/agency/backgrounds/bg-footer.jpg' %} ')">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 footer-contact-details">
+            <h4>
+              <i class="fa fa-phone"></i>
+              Call</h4>
+            <p>+1954-9391437</p>
+            <p>+1786-6144765</p>
+          </div>
+          <div class="col-md-4 footer-contact-details">
+            <h4>
+              <i class="fa fa-map-marker"></i>
+              Visit</h4>
+            <p>3716 Coral springs Dr
+              <br>Coral springs, Fl 33065</p>
+          </div>
+          <div class="col-md-4 footer-contact-details">
+            <h4>
+              <i class="fa fa-envelope"></i>
+              Email</h4>
+            <p>
+              <a href="mailto:wallprotection@quickbrothersinc.net">wallprotection<br>@quickbrothersinc.net</a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-social">
+          <div class="col-lg-12">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                {% if LINK_FACEBOOK %}
+                <a href="#">
+                  <i class="fab fa-facebook fa-fw fa-2x"></i>
+                </a>
+                {% endif %}
+              </li>
+              <li class="list-inline-item">
+                {% if LINK_INSTAGRAM %}
+                <a href="{{ LINK_INSTAGRAM }}">
+                  <i class="fab fa-instagram fa-fw fa-2x"></i>
+                </a>
+                {% endif %}
+              </li>
+              <li class="list-inline-item">
+                {% if LINK_LINKEDIN %}
+                <a href="#">
+                  <i class="fab fa-linkedin fa-fw fa-2x"></i>
+                </a>
+                {% endif %}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2017 Quickbrothers created by <a href="http://www.moicastillo.com">Moises Castillo</a></p>
+      </div>
+    </footer>
+{% endblock %}
+
+{% endblock %}
+
+{% block modal %}
+
+    <!-- Portfolio Modals -->
+    <!-- Example Modal 1: Corresponds with Portfolio Carousel Item 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url({% static 'core/img/agency/portfolio/carousel/bg-1.jpg' %})">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2>Project Name</h2>
+                  <hr class="colored">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <div class="device-mockup macbook portrait black">
+                    <div class="device">
+                      <div class="screen">
+
+                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
+                        <!-- <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-fluid" alt=""> -->
+
+                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below)-->
+                        <div class="mockup-carousel">
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-1a.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-2b.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-3c.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>Start Bootstrap</strong>
+                    </li>
+                    <li>Date:
+                      <strong>April 2017</strong>
+                    </li>
+                    <li>Service:
+                      <strong>Web Development</strong>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example Modal 2: Corresponds with Portfolio Carousel Item 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2>Project Name</h2>
+                  <hr class="colored">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <div class="device-mockup macbook portrait black">
+                    <div class="device">
+                      <div class="screen">
+
+                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
+                        <!-- <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt=""> -->
+
+                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
+                        <div class="mockup-carousel">
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-2a.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-2b.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-2c.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>Start Bootstrap</strong>
+                    </li>
+                    <li>Date:
+                      <strong>April 2017</strong>
+                    </li>
+                    <li>Service:
+                      <strong>Web Development</strong>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example Modal 3: Corresponds with Portfolio Carousel Item 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2>Project Name</h2>
+                  <hr class="colored">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <div class="device-mockup macbook portrait black">
+                    <div class="device">
+                      <div class="screen">
+
+                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
+                        <!-- <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt=""> -->
+
+                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
+                        <div class="mockup-carousel">
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-3a.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-3b.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="{% static 'core/img/agency/portfolio/carousel/screen-3c.jpg' %}" class="img-fluid" alt="">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>Start Bootstrap</strong>
+                    </li>
+                    <li>Date:
+                      <strong>April 2017</strong>
+                    </li>
+                    <li>Service:
+                      <strong>Web Development</strong>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example Modal 4: Corresponds with Portfolio Carousel Item 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2>Project Name</h2>
+                  <hr class="colored">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <div class="device-mockup macbook portrait black">
+                    <div class="device">
+                      <div class="screen">
+
+                        <!-- Modal Mockup Option 1: Single Image (Example In Use Below) -->
+                        <img src="{% static 'core/img/agency/portfolio/carousel/screen-4.jpg' %}" class="img-fluid" alt="">
+
+                        <!-- Modal Mockup Option 2: Carousel (Uncomment Below to Use) -->
+                        <!-- <div class="mockup-carousel">
+                          <div class="item">
+                            <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-fluid" alt="">
+                          </div>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>Start Bootstrap</strong>
+                    </li>
+                    <li>Date:
+                      <strong>April 2017</strong>
+                    </li>
+                    <li>Service:
+                      <strong>Web Development</strong>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'core/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'core/vendor/owl-carousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'core/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'core/vendor/vide/jquery.vide.min.js' %}"></script>
+    <script src="{% static 'core/vendor/mixitup/mixitup.min.js' %}"></script>
+    <script src="{% static 'core/vendor/wowjs/wow.min.js' %}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{% static 'core/js/contact_me.js' %}"></script>
+    <script src="{% static 'core/js/jqBootstrapValidation.js' %}"></script>
+
+    <!-- Custom scripts for this theme -->
+    <script src="{% static 'core/js/vitality.js' %}"></script>
+    <script src="{% static 'core/js/mixitup-config.js' %}"></script>
+
+  </body>
+
+</html>
